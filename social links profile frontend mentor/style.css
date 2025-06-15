@@ -16,7 +16,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400, 600, 700;
     color: var(--White);
-    background-color: var(--Grey-900);
+    background-color: none;
     text-align: center;
 }
 
@@ -36,13 +36,22 @@ h1 {
 
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    color: var(--green);
-    font-style: italic;
-    margin-inline: auto;
 
+.user-avatar-container {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+}
+
+.user-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 ul li {
@@ -56,7 +65,7 @@ a {
 }
 
 
- style-bender {
+style-bender {
     border-color: darkgray;
     border-radius: 23px;
     flex: auto;
@@ -65,7 +74,7 @@ a {
 
 
 
- }
+}
 
 /* text styles */
 
@@ -73,12 +82,12 @@ a {
     font-size: 14px;
     font-weight: 400, 600, 700;
     margin-bottom: .5rem;
-    
-    
+
+
 }
 
 .user-location {
-    color: var(--green);
+    color: lightblue;
     font-weight: 600;
     margin-bottom: 1.25rem;
 
@@ -96,9 +105,9 @@ a {
 
 }
 
-.list-item:hover{
+.list-item:hover {
     color: var(--Grey-800);
-    background: var(--green);
+    background: lightblue;
 }
 
 /* layout styles */
@@ -107,7 +116,7 @@ a {
     width: 25em;
     background: var(--Grey-800);
     padding: 1.75rem;
-    border-radius:.6rem ;
+    border-radius: .6rem;
 }
 
 .wrapper {
@@ -124,15 +133,8 @@ a {
 
 
 
-.social-links{
+.social-links {
     margin-top: 1.5rem;
 }
 
 /* general styles */
-
-.user-image{
-    width: 6em;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-
-}
